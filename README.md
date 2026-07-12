@@ -90,8 +90,8 @@ Zero runtime dependencies. Dual entry via `exports` (`require` / `import`).
 
 ## Links
 
+- npm: [@lprajus2007/micro-retry](https://www.npmjs.com/package/@lprajus2007/micro-retry)
 - GitHub: [lprajus2007/micro-retry](https://github.com/lprajus2007/micro-retry)
-- Package: [@lprajus2007/micro-retry](https://github.com/lprajus2007/micro-retry/pkgs/npm/micro-retry)
 - Release: [v1.0.0](https://github.com/lprajus2007/micro-retry/releases/tag/v1.0.0)
 
 ## License
