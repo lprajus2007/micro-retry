@@ -1,0 +1,63 @@
+{
+  "name": "micro-retry",
+  "version": "1.0.0",
+  "description": "Tiny zero-dependency async retry with exponential backoff and jitter. Promise-friendly, AbortSignal-aware.",
+  "license": "MIT",
+  "author": "lprajus2007",
+  "keywords": [
+    "retry",
+    "backoff",
+    "exponential-backoff",
+    "async",
+    "promise",
+    "resilience",
+    "jitter",
+    "abort",
+    "timeout",
+    "retry-async",
+    "exponential",
+    "zero-dependency"
+  ],
+  "homepage": "https://github.com/lprajus2007/micro-retry#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lprajus2007/micro-retry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lprajus2007/micro-retry/issues"
+  },
+  "type": "commonjs",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "sideEffects": false
+}
