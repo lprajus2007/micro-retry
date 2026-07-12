@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "lprajus2007",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
+    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "keywords": [

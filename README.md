@@ -5,22 +5,14 @@
 Promise-friendly. AbortSignal-aware. Works with CommonJS and ESM on Node 14+.
 
 ```bash
-# GitHub Packages (requires auth for the @lprajus2007 scope — see Install notes)
 npm install @lprajus2007/micro-retry
-
-# Or install straight from the GitHub repo (no registry config):
-npm install github:lprajus2007/micro-retry
 ```
 
-### GitHub Packages registry config
+Also available via GitHub:
 
 ```bash
-# ~/.npmrc (or project .npmrc)
-@lprajus2007:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+npm install github:lprajus2007/micro-retry
 ```
-
-Token needs `read:packages` (and `write:packages` to publish).
 
 ## Why
 
