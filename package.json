@@ -1,9 +1,13 @@
 {
-  "name": "micro-retry",
+  "name": "@lprajus2007/micro-retry",
   "version": "1.0.0",
   "description": "Tiny zero-dependency async retry with exponential backoff and jitter. Promise-friendly, AbortSignal-aware.",
   "license": "MIT",
   "author": "lprajus2007",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
   "keywords": [
     "retry",
     "backoff",

@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const path = require('node:path');
 
 // Drive the SHIPPED package entry (package root), not a reimplemented copy.
+// Load via package root (same path consumers resolve after install of this package).
 const pkgRoot = path.join(__dirname, '..');
 const { retry, sleep, computeDelay } = require(pkgRoot);
 

@@ -5,8 +5,22 @@
 Promise-friendly. AbortSignal-aware. Works with CommonJS and ESM on Node 14+.
 
 ```bash
-npm install micro-retry
+# GitHub Packages (requires auth for the @lprajus2007 scope — see Install notes)
+npm install @lprajus2007/micro-retry
+
+# Or install straight from the GitHub repo (no registry config):
+npm install github:lprajus2007/micro-retry
 ```
+
+### GitHub Packages registry config
+
+```bash
+# ~/.npmrc (or project .npmrc)
+@lprajus2007:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+```
+
+Token needs `read:packages` (and `write:packages` to publish).
 
 ## Why
 
@@ -15,8 +29,8 @@ Network and API calls fail. You need a few lines to retry with backoff — witho
 ## Usage
 
 ```js
-const { retry } = require('micro-retry');
-// or: import { retry } from 'micro-retry';
+const { retry } = require('@lprajus2007/micro-retry');
+// or: import { retry } from '@lprajus2007/micro-retry';
 
 const data = await retry(
   async () => {
@@ -85,7 +99,8 @@ Zero runtime dependencies. Dual entry via `exports` (`require` / `import`).
 ## Links
 
 - GitHub: [lprajus2007/micro-retry](https://github.com/lprajus2007/micro-retry)
-- npm: [micro-retry](https://www.npmjs.com/package/micro-retry)
+- Package: [@lprajus2007/micro-retry](https://github.com/lprajus2007/micro-retry/pkgs/npm/micro-retry)
+- Release: [v1.0.0](https://github.com/lprajus2007/micro-retry/releases/tag/v1.0.0)
 
 ## License
 
